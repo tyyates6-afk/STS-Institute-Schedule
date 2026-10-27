@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STS Institute | Student Schedule</title>
+
+    <meta name="theme-color" content="#213a42">
+    <meta name="description"
+          content="The official STS Institute student schedule.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="brand">
+            <span class="brand-mark">STS</span>
+
+            <div class="brand-text">
+                <h1>STS Institute</h1>
+                <p>Student Schedule</p>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <button class="nav-button active" data-view="week">
+                Week
+            </button>
+
+            <button class="nav-button" data-view="month">
+                Month
+            </button>
+
+            <button class="nav-button" data-view="upcoming">
+                Upcoming
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Page Heading -->
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">STUDENT PORTAL</p>
+                <h2>Institute Calendar</h2>
+                <p class="subtitle">
+                    Your schedule, all in one place.
+                </p>
+            </div>
+
+            <div class="connection-status">
+                <span class="status-dot"></span>
+                <span id="connectionText">Demo Mode</span>
+            </div>
+        </section>
+
+        <!-- Calendar Controls -->
+        <section class="calendar-controls">
+
+            <div class="date-navigation">
+                <button id="previousPeriod"
+                        class="icon-button"
+                        aria-label="Previous period">
+                    &#8592;
+                </button>
+
+                <button id="todayButton" class="today-button">
+                    Today
+                </button>
+
+                <button id="nextPeriod"
+                        class="icon-button"
+                        aria-label="Next period">
+                    &#8594;
+                </button>
+
+                <h3 id="periodTitle">This Week</h3>
+            </div>
+
+            <button id="addEventButton" class="primary-button">
+                <span>+</span> Add Event
+            </button>
+
+        </section>
+
+        <!-- Calendar -->
+        <section class="calendar-card">
+
+            <div id="calendarContainer">
+
+                <div class="calendar-placeholder">
+                    <div class="placeholder-icon">&#128197;</div>
+
+                    <h3>Your schedule starts here</h3>
+
+                    <p>
+                        Add events to build the Institute calendar.
+                    </p>
+
+                    <button class="primary-button"
+                            id="firstEventButton">
+                        Create First Event
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PLAN AHEAD</p>
+                    <h2>Upcoming Events</h2>
+                </div>
+            </div>
+
+            <div id="upcomingEvents" class="upcoming-events">
+                <p class="empty-message">
+                    Your upcoming events will appear here.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>STS Institute Student Schedule</p>
+        <p>Built for the Institute community.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
