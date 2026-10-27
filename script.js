@@ -269,13 +269,13 @@ function createEventModal() {
                         <label for="eventCategory">Category</label>
 
                         <select id="eventCategory" name="category">
-                            <option value="Class">Class</option>
+                            <option value="Core Class">Core Class</option>
                             <option value="Chapel">Chapel</option>
                             <option value="Worship">Worship</option>
-                            <option value="Activity">Activity</option>
+                            <option value="Student">Student</option>
                             <option value="Meal">Meal</option>
-                            <option value="Meeting">Meeting</option>
-                            <option value="Other">Other</option>
+                            <option value="Media">Media</option>
+                            <option value="Children">Children</option>
                         </select>
                     </div>
                 </div>
