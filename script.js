@@ -861,7 +861,7 @@ function openEventModal(eventId = null, date = null) {
         existingEvent?.title || "";
 
     document.getElementById("eventCategory").value =
-        existingEvent?.category || "Class";
+        existingEvent?.category || "Core Class";
 
     document.getElementById("eventLocation").value =
         existingEvent?.location || "";
